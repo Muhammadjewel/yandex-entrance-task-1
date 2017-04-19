@@ -11,6 +11,21 @@
   -o-transition: all .4s ease
   transition: all .4s ease
 
+  @media only screen and (min-width: 768px)
+    float: left
+    width: 49%
+    margin-bottom: 1.5rem
+
+    &:nth-child(odd)
+      margin-right: 2%
+
+    &--details.is-hidden
+      display: block
+      font-size: 1.6rem
+
+    .card--expander
+      display: none
+
   &:hover
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3)
 
@@ -75,6 +90,10 @@
       display: inline-block
       margin-right: 0.5rem
 
+  &--lecturers
+    &--lecturer
+      margin-bottom: 0.3rem
+
   &--link--button
     display: inline-block
     padding: 0.8rem 1.5rem
@@ -92,3 +111,11 @@
       color: #fff
 
   &.past:after
+    position: absolute
+    top: 0
+    right: 0
+    padding: 0.5rem 1rem
+    background: #555
+    color: #fff
+    font-size: 1.3rem
+    content: "Прошла"

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==============================
  * PLUGINS
  * ============================== */
@@ -341,7 +342,7 @@ h1 {
   font-size: 2.8rem; }
 
 h2 {
-  font-size: 2.3rem; }
+  font-size: 2rem; }
 
 a {
   color: #2185d0;
@@ -366,8 +367,12 @@ ul, ol {
 /* ==============================
  * LAYOUT STYLES
  * ============================== */
-header, main, footer {
+#header, #main, #footer {
   padding: 1.5rem 0; }
+
+#main {
+  padding: 3rem 0;
+  background: #fee11b; }
 
 .l-left {
   float: left; }
@@ -398,6 +403,18 @@ header, main, footer {
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease; }
+  @media only screen and (min-width: 768px) {
+    .card {
+      float: left;
+      width: 49%;
+      margin-bottom: 1.5rem; }
+      .card:nth-child(odd) {
+        margin-right: 2%; }
+      .card--details.is-hidden {
+        display: block;
+        font-size: 1.6rem; }
+      .card .card--expander {
+        display: none; } }
   .card:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
   .card:hover .card--date--day {
@@ -449,6 +466,8 @@ header, main, footer {
   .card--meta li {
     display: inline-block;
     margin-right: 0.5rem; }
+  .card--lecturers--lecturer {
+    margin-bottom: 0.3rem; }
   .card--link--button {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -463,6 +482,15 @@ header, main, footer {
       background: red;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
       color: #fff; }
+  .card.past:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    background: #555;
+    color: #fff;
+    font-size: 1.3rem;
+    content: "╨Я╤А╨╛╤И╨╗╨░"; }
 
 /* TAG STYLES */
 .tags--tag {
@@ -477,23 +505,33 @@ header, main, footer {
 /* MODAL STYLES */
 .lecturer-modal {
   margin: 0 auto;
+  padding: 2rem 3rem 3rem;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  text-align: center; }
   .lecturer-modal--avatar {
+    width: 240px;
     max-width: 100%;
+    height: 240px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background: #e9e9e9;
+    text-align: center; }
+  .lecturer-modal--name {
     text-align: center; }
   .lecturer-modal--bio {
     text-align: justify; }
   .lecturer-modal--lectures {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    text-align: left; }
     .lecturer-modal--lectures--lecture {
       margin-bottom: 0.3rem; }
 
 .blocker:before {
-  height: 10%; }
+  height: 5%; }
 
 /* ==============================
  * STATE STYLES
