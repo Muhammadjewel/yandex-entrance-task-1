@@ -1,0 +1,94 @@
+/* CARD STYLES */
+.card
+  position: relative
+  margin-bottom: 1.5rem
+  padding: 1.2rem
+  background: #fff
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2)
+
+  -webkit-transition: all .4s ease
+  -moz-transition: all .4s ease
+  -o-transition: all .4s ease
+  transition: all .4s ease
+
+  &:hover
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3)
+
+  &:hover &--date--day
+    color: #f00
+
+  &--date
+    width: 20%
+    padding-right: 1rem
+    line-height: 1
+    text-align: right
+
+    &--day
+      display: block
+      font-size: 4rem
+      font-weight: bold
+      -webkit-transition: all .4s ease
+      -moz-transition: all .4s ease
+      -o-transition: all .4s ease
+      transition: all .4s ease
+
+    &--month
+      display: block
+
+  &--title
+    position: relative
+    width: 80%
+    min-height: 6rem
+    padding-left: 1rem
+    border-left: 2px solid #222
+    line-height: 1.3
+
+  &--expander
+    position: relative
+    right: 0
+    bottom: 0
+    display: inline-block
+    float: right
+    margin-top: 1rem
+    padding: 0.5rem
+    background: #f0f8ff
+    font-size: 1.4rem
+    text-align: right
+
+    -webkit-transition: all .4s ease
+    -moz-transition: all .4s ease
+    -o-transition: all .4s ease
+    transition: all .4s ease
+
+  &--details
+    margin-top: 1rem
+    padding: 1rem 0.5rem 0.5rem
+    border-top: 1px solid #ccc
+    font-size: 1.4rem
+
+    > div
+      margin-bottom: 0.4rem
+
+  &--meta
+
+    li
+      display: inline-block
+      margin-right: 0.5rem
+
+  &--link--button
+    display: inline-block
+    padding: 0.8rem 1.5rem
+    -webkit-border-radius: 0.4rem
+    -moz-border-radius: 0.4rem
+    -ms-border-radius: 0.4rem
+    -o-border-radius: 0.4rem
+    border-radius: 0.4rem
+    background: $link-color
+    color: #fff
+
+    &:hover
+      background: $primary-color
+      box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3)
+      color: #fff
+
+  &.past:after

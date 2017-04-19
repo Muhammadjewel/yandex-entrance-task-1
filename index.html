@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Расписание лекций - Yandex Мобилизация</title>
+
+  <!-- <link rel="shortcut icon" href=""> -->
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <header id="header" class="l-align-center">
+    <div class="container">
+      <img src="img/yandex-logo.png" alt="Яндекс логотип" class="l-img-responsive">
+      <h1>Проект "Мобилизация"</h1>
+      <p>3 июля второй раз стартует проект Яндекса «Мобилизация». Он вновь объединит четыре летние школы для начинающих специалистов: Школу менеджмента, Школу мобильного дизайна, Школу разработки интерфейсов и Школу мобильной разработки.</p>
+      <p>Своим опытом и знаниями с участниками будут делиться специалисты Яндекса и приглашенные спикеры. Кроме теоретических занятий предполагается и практика — командная работа над мобильными продуктами.</p>
+      <p>Для поступления необходимо выбрать одну из школ и выполнить тестовое задание.</p>
+      <p>При успешном выполнении вас пригласят на Skype-собеседование.</p>
+    </div><!--  .container -->
+  </header><!-- #header  -->
+
+  <datalist id="lecturers">
+    <option value="Дмитрий Душкин">
+    <option value="Антон Тен">
+  </datalist>
+  <input type="text" list="lecturers">
+
+  <main id="main">
+    <div class="container">
+
+      <section class="schedule">
+        <ol class="lectures cf">
+
+          <li class="card cf">
+
+            <div class="card--title--box cf">
+              <div class="card--date l-left">
+                <span class="card--date--day">18</span>
+                <span class="card--date--month">Окт</span>
+              </div><!--  .card--date -->
+
+              <div class="card--title l-left cf">
+                <strong>Лекция 1. Идея, исследование, концепт</strong>
+                <a class="card--expander" href="#">Больше информации</a>
+              </div><!--  .card--title -->
+            </div><!--  .card--title--box -->
+
+            <div class="card--details is-hidden cf">
+              <div class="card--meta">
+                <ul>
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 100</li><!-- .card--meta-- -->
+                </ul>
+              </div><!--  .card--meta -->
+
+              <div class="card--tags tags">
+                <strong>Школы</strong>
+                <ul class="l-inline">
+                  <li class="tags--tag"><i class="fa fa-paint-brush"></i> Дизайн</li>
+                  <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
+                  <li class="tags--tag"><i class="fa fa-desktop"></i> Интерфейс</li>
+                  <li class="tags--tag"><i class="fa fa-sitemap"></i> Менеджмент</li>
+                </ul>
+              </div><!--  .card--meta--tags tags -->
+
+              <div class="card--lecturers">
+                <strong>Лекторы</strong>
+                <ul class="l-inline">
+                  <li class="card--lecturers--lecturer">
+                    <a href="#myModal" rel="modal:open" class="open-modal">Антон Тен <i class="fa fa-info-circle"></i></a>
+                  </li>
+                  <li class="card--lecturers--lecturer">
+                    <a href="#">Дмитрий Душкин <i class="fa fa-info-circle"></i></a>
+                  </li>
+                </ul>
+              </div><!--  .card--lecturers -->
+
+              <a href="https://events.yandex.ru/lib/talks/4162/" class="card--link--button l-right">Смотреть</a>
+
+            </div><!--  .card--details -->
+          </li><!--  .card -->
+
+          <li class="card cf">
+
+            <div class="card--title--box cf">
+              <div class="card--date l-left">
+                <span class="card--date--day">18</span>
+                <span class="card--date--month">Окт</span>
+              </div><!--  .card--date -->
+
+              <div class="card--title l-left cf">
+                <strong>Лекция 1. Идея, исследование, концепт</strong>
+                <a class="card--expander" href="#">Больше информации</a>
+              </div><!--  .card--title -->
+            </div><!--  .card--title--box -->
+
+            <div class="card--details is-hidden cf">
+              <div class="card--meta">
+                <ul>
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 100</li><!-- .card--meta-- -->
+                </ul>
+              </div><!--  .card--meta -->
+
+              <div class="card--tags tags">
+                <strong>Школы</strong>
+                <ul class="l-inline">
+                  <li class="tags--tag"><i class="fa fa-paint-brush"></i> Дизайн</li>
+                  <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
+                  <li class="tags--tag"><i class="fa fa-desktop"></i> Интерфейс</li>
+                  <li class="tags--tag"><i class="fa fa-sitemap"></i> Менеджмент</li>
+                </ul>
+              </div><!--  .card--meta--tags tags -->
+
+              <div class="card--lecturers">
+                <strong>Лекторы</strong>
+                <ul class="l-inline">
+                  <li class="card--lecturers--lecturer">
+                    <a href="#">Антон Тен <i class="fa fa-info-circle"></i></a>
+                  </li>
+                  <li class="card--lecturers--lecturer">
+                    <a href="#">Дмитрий Душкин <i class="fa fa-info-circle"></i></a>
+                  </li>
+                </ul>
+              </div><!--  .card--lecturers -->
+
+              <a href="https://events.yandex.ru/lib/talks/4162/" class="card--link--button l-right">Смотреть</a>
+
+            </div><!--  .card--details -->
+          </li><!--  .card -->
+
+        </ol><!--  .lectures -->
+      </section><!--  .schedule -->
+
+    </div><!--  .container -->
+  </main><!-- #main  -->
+
+  <div class="modal is-hidden lecturer-modal" id="myModal">
+
+    <img src="img/yandex-logo.png" alt="Lecturer" class="lecturer-modal--avatar">
+    <h3 class="lecturer-modal--name">Дмитрий Душкин</h3>
+    <p class="lecturer-modal--bio">Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы и дизайн веб-приложений для B2B.</p>
+    <h4>Доклады</h4>
+    <ul class="lecturer-modal--lectures">
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4162/">Лекция 1. Адаптивная верстка</a></li><!--  .lecturer-modal--lecture -->
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4172/">Лекция 2. Работа с сенсорным пользовательским вводом</a></li><!--  .lecturer-modal--lecture -->
+    </ul><!--  .lecturer-modal--lectures -->
+
+  </div><!--  .lecturer-modal -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://use.fontawesome.com/6af8404615.js"></script>
+  <script src="js/jquery.modal.min.js"></script>
+  <script src="js/lodash.core.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+/* COMMON.SASS */
+html
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  font-size: 62.5%
+
+*,
+*:after,
+*:before
+  -webkit-box-sizing: inherit
+  -moz-box-sizing: inherit
+  box-sizing: inherit
+
+body
+  margin: 0
+  padding: 0
+  background: #fff
+  color: #222
+  font-family: "Roboto", sans-serif
+  font-size: 1.6rem
+  line-height: 1.5
+
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 1.2rem
+
+h1
+  font-size: 2.8rem
+
+h2
+  font-size: 2.3rem
+
+a
+  color: $link-color
+  font-weight: normal
+  text-decoration: none
+  -webkit-transition: all .3s ease
+  -o-transition: all .3s ease
+  transition: all .3s ease
+
+  &:hover
+    color: $link-color-hover
+
+ul, ol
+  margin: 0
+  padding: 0
+  list-style: none
+
+.container
+  width: 90%
+  max-width: 1000px
+  margin: 0 auto
