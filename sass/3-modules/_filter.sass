@@ -1,0 +1,68 @@
+/* FILTER STYLES */
+.filter
+  position: fixed
+  z-index: 3
+  top: 0
+  left: 0
+  width: 100%
+  padding: 1rem
+  background: rgba(254, 225, 27, .9)
+
+  &--toggler
+    position: fixed
+    right: 2rem
+    bottom: 2rem
+    padding: 1rem
+    border: none
+    -webkit-border-radius: 0.4rem
+    -moz-border-radius: 0.4rem
+    -ms-border-radius: 0.4rem
+    -o-border-radius: 0.4rem
+    border-radius: 0.4rem
+    background: $primary-color
+    -webkit-background-clip: padding-box
+    -moz-background-clip: padding-box
+    background-clip: padding-box
+    color: #fff
+
+    &:hover
+      cursor: pointer
+
+  label
+    display: block
+    padding: 0.3rem 0
+    font-weight: bold
+    text-align: center
+
+    &:hover
+      cursor: pointer
+
+  &--form
+
+  &--school
+
+  &--lecturer
+
+  &--date
+
+  &--apply
+    display: block
+    width: 100%
+    margin-top: 1rem
+    margin-bottom: 1rem
+    padding: 1rem
+    border: none
+    background: red
+    color: #fff
+
+  @media only screen and (min-width: 768px)
+    &.is-hidden
+      position: relative
+      display: block
+      width: 100%
+
+    &--school, &--lecturer, &--month
+      float: left
+      width: 25%
+      padding: 0 2rem
+      background: #fff
