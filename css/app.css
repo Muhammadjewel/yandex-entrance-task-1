@@ -853,6 +853,7 @@ ul, ol {
   @media only screen and (min-width: 768px) {
     .filter.is-hidden {
       position: relative;
+      z-index: 1;
       display: block;
       width: 100%; }
     .filter--school, .filter--lecturer, .filter--month {

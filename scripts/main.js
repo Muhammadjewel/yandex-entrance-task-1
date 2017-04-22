@@ -71,6 +71,7 @@
 
   $("#main").on("click", ".filter--toggler", function(){
     $(this).closest("body").find(".filter").fadeIn();
+    $(this).hide();
   });
 
   $(".filter--reset").click(function(){

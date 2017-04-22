@@ -32,7 +32,7 @@
           <select name="school" id="school-filter">
             <option value="" selected>Все</option>
             <option value="mngmnt">Менеджмент</option>
-            <option value="webi">Интерфейс</option>
+            <option value="frontend">Интерфейс</option>
             <option value="design">Дизайн</option>
             <option value="mobdev">Моб. разработка</option>
           </select>
@@ -82,16 +82,60 @@
       <section class="schedule">
         <ol class="lectures cf">
 
-          <li class="card past cf" data-school="design">
+          <li class="card past cf" data-school="all">
+            <div class="card--title--box cf">
+              <div class="card--date l-left">
+                <span class="card--date--day">18</span>
+                <span class="card--date--month">Окт</span>
+              </div><!--  .card--date -->
+              <div class="card--title l-left cf">
+                <h2>Лекция 1. Идея, исследование, концепт</h2>
+                <a class="card--expander" href="#">Больше информации</a>
+              </div><!--  .card--title -->
+            </div><!--  .card--title--box -->
+
+            <div class="card--details is-hidden cf">
+              <div class="card--meta">
+                <ul>
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 100</li><!-- .card--meta-- -->
+                </ul>
+              </div><!--  .card--meta -->
+
+              <div class="card--tags tags">
+                <strong>Школы</strong>
+                <ul class="l-inline">
+                  <li class="tags--tag"><i class="fa fa-paint-brush"></i> Дизайн</li>
+                  <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
+                  <li class="tags--tag"><i class="fa fa-desktop"></i> Интерфейс</li>
+                  <li class="tags--tag"><i class="fa fa-sitemap"></i> Менеджмент</li>
+                </ul>
+              </div><!--  .card--meta--tags tags -->
+
+              <div class="card--lecturers">
+                <strong>Лекторы</strong>
+                <ul class="l-inline">
+                  <li class="card--lecturers--lecturer">
+                    <a href="#atenModal" rel="modal:open" class="open-modal">Антон Тен <i class="fa fa-info-circle"></i></a>
+                  </li>
+                </ul>
+              </div><!--  .card--lecturers -->
+
+              <a href="https://events.yandex.ru/lib/talks/4158/" class="card--link--button l-right">Смотреть</a>
+
+            </div><!--  .card--details -->
+          </li><!--  .card -->
+
+          <li class="card past cf" data-school="all">
 
             <div class="card--title--box cf">
               <div class="card--date l-left">
                 <span class="card--date--day">18</span>
                 <span class="card--date--month">Окт</span>
               </div><!--  .card--date -->
-
               <div class="card--title l-left cf">
-                <h2>Лекция 1. Идея, исследование, концепт</h2>
+                <h2>Лекция 2. Идея, исследование, концепт (Часть 2)</h2>
                 <a class="card--expander" href="#">Больше информации</a>
               </div><!--  .card--title -->
             </div><!--  .card--title--box -->
@@ -99,7 +143,7 @@
             <div class="card--details is-hidden cf">
               <div class="card--meta">
                 <ul>
-                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 20:30</li><!-- .card--meta-- -->
                   <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
                   <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 100</li><!-- .card--meta-- -->
                 </ul>
@@ -119,10 +163,137 @@
                 <strong>Лекторы</strong>
                 <ul class="l-inline">
                   <li class="card--lecturers--lecturer">
-                    <a href="#myModal" rel="modal:open" class="open-modal">Антон Тен <i class="fa fa-info-circle"></i></a>
+                    <a href="#atenModal" rel="modal:open" class="open-modal">Антон Тен <i class="fa fa-info-circle"></i></a>
                   </li>
+                </ul>
+              </div><!--  .card--lecturers -->
+
+              <a href="https://events.yandex.ru/lib/talks/4159/" class="card--link--button l-right">Смотреть</a>
+
+            </div><!--  .card--details -->
+          </li><!--  .card -->
+
+          <li class="card past cf" data-school="mobdev">
+
+            <div class="card--title--box cf">
+              <div class="card--date l-left">
+                <span class="card--date--day">19</span>
+                <span class="card--date--month">Окт</span>
+              </div><!--  .card--date -->
+
+              <div class="card--title l-left cf">
+                <h2>Лекция 1. Java Blitz (Часть 1)</h2>
+                <a class="card--expander" href="#">Больше информации</a>
+              </div><!--  .card--title -->
+            </div><!--  .card--title--box -->
+
+            <div class="card--details is-hidden cf">
+              <div class="card--meta">
+                <ul>
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Белый кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 80</li><!-- .card--meta-- -->
+                </ul>
+              </div><!--  .card--meta -->
+
+              <div class="card--tags tags">
+                <strong>Школы</strong>
+                <ul class="l-inline">
+                  <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
+                </ul>
+              </div><!--  .card--meta--tags tags -->
+
+              <div class="card--lecturers">
+                <strong>Лекторы</strong>
+                <ul class="l-inline">
                   <li class="card--lecturers--lecturer">
-                    <a href="#">Дмитрий Душкин <i class="fa fa-info-circle"></i></a>
+                    <a href="#emacModal" rel="modal:open" class="open-modal">Эдуард Мацуков <i class="fa fa-info-circle"></i></a>
+                  </li>
+                </ul>
+              </div><!--  .card--lecturers -->
+
+              <a href="https://events.yandex.ru/lib/talks/4160/" class="card--link--button l-right">Смотреть</a>
+
+            </div><!--  .card--details -->
+          </li><!--  .card -->
+
+          <li class="card past cf" data-school="mobdev">
+
+            <div class="card--title--box cf">
+              <div class="card--date l-left">
+                <span class="card--date--day">19</span>
+                <span class="card--date--month">Окт</span>
+              </div><!--  .card--date -->
+
+              <div class="card--title l-left cf">
+                <h2>Лекция 2. Git &amp; Workflow</h2>
+                <a class="card--expander" href="#">Больше информации</a>
+              </div><!--  .card--title -->
+            </div><!--  .card--title--box -->
+
+            <div class="card--details is-hidden cf">
+              <div class="card--meta">
+                <ul>
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 20:30</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Белый кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 80</li><!-- .card--meta-- -->
+                </ul>
+              </div><!--  .card--meta -->
+
+              <div class="card--tags tags">
+                <strong>Школы</strong>
+                <ul class="l-inline">
+                  <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
+                </ul>
+              </div><!--  .card--meta--tags tags -->
+
+              <div class="card--lecturers">
+                <strong>Лекторы</strong>
+                <ul class="l-inline">
+                  <li class="card--lecturers--lecturer">
+                    <a href="#dskladnovModal" rel="modal:open" class="open-modal">Дмитрий Складнов <i class="fa fa-info-circle"></i></a>
+                  </li>
+                </ul>
+              </div><!--  .card--lecturers -->
+
+              <a href="https://events.yandex.ru/lib/talks/4161/" class="card--link--button l-right">Смотреть</a>
+
+            </div><!--  .card--details -->
+          </li><!--  .card -->
+
+          <li class="card cf" data-school="frontend">
+            <div class="card--title--box cf">
+              <div class="card--date l-left">
+                <span class="card--date--day">20</span>
+                <span class="card--date--month">Окт</span>
+              </div><!--  .card--date -->
+              <div class="card--title l-left cf">
+                <h2>Лекция 1. Адаптивная вёрстка</h2>
+                <a class="card--expander" href="#">Больше информации</a>
+              </div><!--  .card--title -->
+            </div><!--  .card--title--box -->
+
+            <div class="card--details is-hidden cf">
+              <div class="card--meta">
+                <ul>
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 100</li><!-- .card--meta-- -->
+                </ul>
+              </div><!--  .card--meta -->
+
+              <div class="card--tags tags">
+                <strong>Школы</strong>
+                <ul class="l-inline">
+                  <li class="tags--tag"><i class="fa fa-desktop"></i> Интерфейс</li>
+                </ul>
+              </div><!--  .card--meta--tags tags -->
+
+              <div class="card--lecturers">
+                <strong>Лекторы</strong>
+                <ul class="l-inline">
+                  <li class="card--lecturers--lecturer">
+                    <a href="#ddushkinModal" rel="modal:open" class="open-modal">Дмитрий Душкин <i class="fa fa-info-circle"></i></a>
                   </li>
                 </ul>
               </div><!--  .card--lecturers -->
@@ -132,16 +303,16 @@
             </div><!--  .card--details -->
           </li><!--  .card -->
 
-          <li class="card bla cf" data-school="webi">
+          <li class="card past cf" data-school="mobdev">
 
             <div class="card--title--box cf">
               <div class="card--date l-left">
-                <span class="card--date--day">18</span>
-                <span class="card--date--month">Апр</span>
+                <span class="card--date--day">25</span>
+                <span class="card--date--month">Ноя</span>
               </div><!--  .card--date -->
 
               <div class="card--title l-left cf">
-                <h2>Лекция 1. Идея, исследование, концепт</h2>
+                <h2>Лекция 1. Java Blitz (Часть 2)</h2>
                 <a class="card--expander" href="#">Больше информации</a>
               </div><!--  .card--title -->
             </div><!--  .card--title--box -->
@@ -150,18 +321,15 @@
               <div class="card--meta">
                 <ul>
                   <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
-                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
-                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 100</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Белый кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 80</li><!-- .card--meta-- -->
                 </ul>
               </div><!--  .card--meta -->
 
               <div class="card--tags tags">
                 <strong>Школы</strong>
                 <ul class="l-inline">
-                  <li class="tags--tag"><i class="fa fa-paint-brush"></i> Дизайн</li>
                   <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
-                  <li class="tags--tag"><i class="fa fa-desktop"></i> Интерфейс</li>
-                  <li class="tags--tag"><i class="fa fa-sitemap"></i> Менеджмент</li>
                 </ul>
               </div><!--  .card--meta--tags tags -->
 
@@ -169,26 +337,26 @@
                 <strong>Лекторы</strong>
                 <ul class="l-inline">
                   <li class="card--lecturers--lecturer">
-                    <a href="#">Дмитрий Душкин <i class="fa fa-info-circle"></i></a>
+                    <a href="#emacModal" rel="modal:open" class="open-modal">Эдуард Мацуков <i class="fa fa-info-circle"></i></a>
                   </li>
                 </ul>
               </div><!--  .card--lecturers -->
 
-              <a href="https://events.yandex.ru/lib/talks/4162/" class="card--link--button l-right">Смотреть</a>
+              <a href="https://events.yandex.ru/lib/talks/4168/" class="card--link--button l-right">Смотреть</a>
 
             </div><!--  .card--details -->
           </li><!--  .card -->
 
-          <li class="card bla cf" data-school="webi">
+          <li class="card past cf" data-school="mobdev">
 
             <div class="card--title--box cf">
               <div class="card--date l-left">
-                <span class="card--date--day">18</span>
-                <span class="card--date--month">Апр</span>
+                <span class="card--date--day">25</span>
+                <span class="card--date--month">Ноя</span>
               </div><!--  .card--date -->
 
               <div class="card--title l-left cf">
-                <h2>Лекция 1. Идея, исследование, концепт</h2>
+                <h2>MyFirstApp (Часть 1)</h2>
                 <a class="card--expander" href="#">Больше информации</a>
               </div><!--  .card--title -->
             </div><!--  .card--title--box -->
@@ -198,17 +366,14 @@
                 <ul>
                   <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
                   <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
-                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 100</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 80</li><!-- .card--meta-- -->
                 </ul>
               </div><!--  .card--meta -->
 
               <div class="card--tags tags">
                 <strong>Школы</strong>
                 <ul class="l-inline">
-                  <li class="tags--tag"><i class="fa fa-paint-brush"></i> Дизайн</li>
                   <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
-                  <li class="tags--tag"><i class="fa fa-desktop"></i> Интерфейс</li>
-                  <li class="tags--tag"><i class="fa fa-sitemap"></i> Менеджмент</li>
                 </ul>
               </div><!--  .card--meta--tags tags -->
 
@@ -216,12 +381,56 @@
                 <strong>Лекторы</strong>
                 <ul class="l-inline">
                   <li class="card--lecturers--lecturer">
-                    <a href="#">Дмитрий Душкин <i class="fa fa-info-circle"></i></a>
+                    <a href="#rgrigorModal" rel="modal:open" class="open-modal">Роман Григорьев <i class="fa fa-info-circle"></i></a>
                   </li>
                 </ul>
               </div><!--  .card--lecturers -->
 
-              <a href="https://events.yandex.ru/lib/talks/4162/" class="card--link--button l-right">Смотреть</a>
+              <a href="https://events.yandex.ru/lib/talks/4169/" class="card--link--button l-right">Смотреть</a>
+
+            </div><!--  .card--details -->
+          </li><!--  .card -->
+
+          <li class="card past cf" data-school="design">
+
+            <div class="card--title--box cf">
+              <div class="card--date l-left">
+                <span class="card--date--day">25</span>
+                <span class="card--date--month">Ноя</span>
+              </div><!--  .card--date -->
+
+              <div class="card--title l-left cf">
+                <h2>Лекция 3. Особенности проектирования мобильных интерфейсов</h2>
+                <a class="card--expander" href="#">Больше информации</a>
+              </div><!--  .card--title -->
+            </div><!--  .card--title--box -->
+
+            <div class="card--details is-hidden cf">
+              <div class="card--meta">
+                <ul>
+                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
+                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
+                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 80</li><!-- .card--meta-- -->
+                </ul>
+              </div><!--  .card--meta -->
+
+              <div class="card--tags tags">
+                <strong>Школы</strong>
+                <ul class="l-inline">
+                  <li class="tags--tag"><i class="fa fa-paint-brush"></i> Дизайн</li>
+                </ul>
+              </div><!--  .card--meta--tags tags -->
+
+              <div class="card--lecturers">
+                <strong>Лекторы</strong>
+                <ul class="l-inline">
+                  <li class="card--lecturers--lecturer">
+                    <a href="#vnikolayModal" rel="modal:open" title="Васюнин Николай" class="open-modal">Васюнин Николай <i class="fa fa-info-circle"></i></a>
+                  </li>
+                </ul>
+              </div><!--  .card--lecturers -->
+
+              <a href="https://events.yandex.ru/lib/talks/4167/" class="card--link--button l-right">Смотреть</a>
 
             </div><!--  .card--details -->
           </li><!--  .card -->
@@ -234,19 +443,75 @@
     </div><!--  .container -->
   </main><!-- #main  -->
 
-  <div class="modal is-hidden lecturer-modal" id="myModal">
 
-    <img src="https://avatars.mds.yandex.net/get-yaevents/95043/0914ac42b6dc11e687ef002590c62a5c/big_c" alt="Lecturer" class="lecturer-modal--avatar">
+  <!-- MODALS -->
+  <div class="modal is-hidden lecturer-modal" id="atenModal">
+    <img src="https://avatars.mds.yandex.net/get-yaevents/204268/07bb5f8ab6dc11e687ef002590c62a5c/big_c" alt="Антон Тен" title="Антон Тен" class="lecturer-modal--avatar">
+    <h3 class="lecturer-modal--name">Антон Тен</h3>
+    <p class="lecturer-modal--bio">В Яндексе с 2014 года. Ведущий дизайнер продукта в сервисах Переводчик, Расписания и Видео.</p>
+    <h4>Доклады</h4>
+    <ul class="lecturer-modal--lectures">
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4158/" title="Лекция 1. Идея, исследование, концепт (Часть 1)">Лекция 1. Идея, исследование, концепт (Часть 1)</a></li><!--  .lecturer-modal--lecture -->
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4159/" title="Лекция 1. Идея, исследование, концепт (Часть 2)">Лекция 2. Идея, исследование, концепт (Часть 2)</a></li><!--  .lecturer-modal--lecture -->
+    </ul><!--  .lecturer-modal--lectures -->
+  </div><!--  .lecturer-modal -->
+
+  <div class="modal is-hidden lecturer-modal" id="emacModal">
+    <img src="https://avatars.mds.yandex.net/get-yaevents/198307/9d9a8672b6da11e687ef002590c62a5c/big_c" alt="Эдуард Мацуков" title="Эдуард Мацуков" class="lecturer-modal--avatar">
+    <h3 class="lecturer-modal--name">Эдуард Мацуков</h3>
+    <p class="lecturer-modal--bio">Разрабатываю приложения для Android с 2010 года. В 2014 делал высоконагруженное финансовое приложение. Тогда же начал осваивать АОП, внедряя язык в продакшн. В 2015 разрабатывал инструменты для Android Studio, позволяющие использовать aspectJ в своих проектах. В Яндексе занят на проекте Авто.ру.</p>
+    <h4>Доклады</h4>
+    <ul class="lecturer-modal--lectures">
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/3406/" title="Аспектно-ориентированное программирование под Android">Аспектно-ориентированное программирование под Android</a></li><!--  .lecturer-modal--lecture -->
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4160/" title="Лекция 1. Java Blitz (Часть 1)">Лекция 1. Java Blitz (Часть 1)</a></li><!--  .lecturer-modal--lecture -->
+    </ul><!--  .lecturer-modal--lectures -->
+  </div><!--  .lecturer-modal -->
+
+  <div class="modal is-hidden lecturer-modal" id="dskladnovModal">
+    <img src="https://avatars.mds.yandex.net/get-yaevents/197753/08c605ecb6dc11e687ef002590c62a5c/big_c" alt="Дмитрий Складнов" title="Дмитрий Складнов" class="lecturer-modal--avatar">
+    <h3 class="lecturer-modal--name">Дмитрий Складнов</h3>
+    <p class="lecturer-modal--bio">Окончил факультет ИТ Московского Технического Университета. В Яндексе с 2015 года, разрабатывает приложение Auto.ru для Android.</p>
+    <h4>Доклады</h4>
+    <ul class="lecturer-modal--lectures">
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4161/" title="Лекция 2. Git &amp; Workflow">Лекция 2. Git &amp; Workflow</a></li><!--  .lecturer-modal--lecture -->
+    </ul><!--  .lecturer-modal--lectures -->
+  </div><!--  .lecturer-modal -->
+
+  <div class="modal is-hidden lecturer-modal" id="ddushkinModal">
+    <img src="https://avatars.mds.yandex.net/get-yaevents/95043/0914ac42b6dc11e687ef002590c62a5c/big_c" alt="Дмитрий Душкин" title="Дмитрий Душкин" class="lecturer-modal--avatar">
     <h3 class="lecturer-modal--name">Дмитрий Душкин</h3>
     <p class="lecturer-modal--bio">Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы и дизайн веб-приложений для B2B.</p>
     <h4>Доклады</h4>
     <ul class="lecturer-modal--lectures">
-      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4162/">Лекция 1. Адаптивная верстка</a></li><!--  .lecturer-modal--lecture -->
-      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4172/">Лекция 2. Работа с сенсорным пользовательским вводом</a></li><!--  .lecturer-modal--lecture -->
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4162/" title="Лекция 1. Адаптивная вёрстка">Лекция 1. Адаптивная вёрстка</a></li><!--  .lecturer-modal--lecture -->
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4172/" title="Лекция 2. Работа с сенсорным пользовательским вводом">Лекция 2. Работа с сенсорным пользовательским вводом</a></li><!--  .lecturer-modal--lecture -->
     </ul><!--  .lecturer-modal--lectures -->
-
   </div><!--  .lecturer-modal -->
 
+  <div class="modal is-hidden lecturer-modal" id="rgrigorModal">
+    <img src="https://avatars.mds.yandex.net/get-yaevents/198307/1ce07512b6dc11e687ef002590c62a5c/big_c" alt="Роман Григорьев" title="Роман Григорьев" class="lecturer-modal--avatar">
+    <h3 class="lecturer-modal--name">Роман Григорьев</h3>
+    <p class="lecturer-modal--bio">Окончил Самарский университет. Разрабатывает приложения для Android с 2010 года. В Яндексе — с 2012-го. Руководит разработкой мобильных клиентов Яндекс.Диска.</p>
+    <h4>Доклады</h4>
+    <ul class="lecturer-modal--lectures">
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4169/" title="MyFirstApp (Часть 1)">MyFirstApp (Часть 1)</a></li><!--  .lecturer-modal--lecture -->
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4195/" title="Лекция 5. MyFirstApp (Часть 2)">Лекция 5. MyFirstApp (Часть 2)</a></li><!--  .lecturer-modal--lecture -->
+    </ul><!--  .lecturer-modal--lectures -->
+  </div><!--  .lecturer-modal -->
+
+  <div class="modal is-hidden lecturer-modal" id="vnikolayModal">
+    <img src="https://avatars.mds.yandex.net/get-yaevents/194464/1c55b8d2b6dc11e687ef002590c62a5c/big_c" alt="Васюнин Николай" title="Васюнин Николай" class="lecturer-modal--avatar">
+    <h3 class="lecturer-modal--name">Васюнин Николай</h3>
+    <p class="lecturer-modal--bio">Пришёл в Яндекс в 2014 году. Дизайнер продукта в музыкальных сервисах компании, участник команды разработки Яндекс.Радио.</p>
+    <h4>Доклады</h4>
+    <ul class="lecturer-modal--lectures">
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4167/" title="Лекция 3. Особенности проектирования мобильных интерфейсов">Лекция 3. Особенности проектирования мобильных интерфейсов</a></li><!--  .lecturer-modal--lecture -->
+      <li class="lecturer-modal--lectures--lecture"><a href="https://events.yandex.ru/lib/talks/4190/" title="Лекция 5. Природа операционных систем">Лекция 5. Природа операционных систем</a></li><!--  .lecturer-modal--lecture -->
+    </ul><!--  .lecturer-modal--lectures -->
+  </div><!--  .lecturer-modal -->
+
+
+  <!-- SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js"></script>
