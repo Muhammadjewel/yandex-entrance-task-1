@@ -814,7 +814,7 @@ ul, ol {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background: rgba(254, 225, 27, 0.9); }
   .filter h3 {
     text-align: center; }
@@ -857,6 +857,7 @@ ul, ol {
     .filter--buttons a {
       display: inline-block;
       margin-top: 0.7rem;
+      margin-right: 1rem;
       padding: 0.5rem 1rem;
       -webkit-border-radius: 0.4rem;
       -moz-border-radius: 0.4rem;
@@ -866,7 +867,6 @@ ul, ol {
       .filter--buttons a:hover {
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
     .filter--buttons--apply {
-      margin-right: 1rem;
       background: red;
       color: #fff; }
       .filter--buttons--apply:hover {
@@ -875,6 +875,11 @@ ul, ol {
     .filter--buttons--reset {
       background: #fff;
       color: #222; }
+    .filter--buttons--close {
+      background: #ccc;
+      color: #222; }
+      .filter--buttons--close:hover {
+        color: #000; }
   @media only screen and (min-width: 768px) {
     .filter.is-hidden {
       position: relative;
@@ -886,7 +891,9 @@ ul, ol {
         width: 33.3333%;
         padding: 0 2rem; }
       .filter.is-hidden .container > div:last-child {
-        width: 100%; } }
+        width: 100%; }
+    .filter a.filter--buttons--close {
+      display: none; } }
 
 /* MODAL STYLES */
 .lecturer-modal {
