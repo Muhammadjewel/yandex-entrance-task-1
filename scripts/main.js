@@ -22,15 +22,27 @@
     });
     return false;
   });
-/*
-  $("#filter-form").submit(function(e) {
-    e.preventDefault();
-    alert("Clicked");
-  });*/
 
-  $("select").selectize({
-    sortField: "text"
+  $("#school-filter, #month-filter").selectize();
+
+  $("#lecturer-filter").selectize({
+    sortField: 'text'
   });
+
+  $(".filter--buttons--apply").click(function(e) {
+    e.preventDefault();
+    var card = $(".card");
+    var schoolFilter = $("#school-filter").val();
+    var lecturerFilter = $("#lecturer-filter").val();
+
+    if (schoolFilter !== "all") {
+      card.removeClass('is-hidden');
+      var schoolFiltered = card.not("[data-school='" + schoolFilter + "']").addClass('is-hidden');
+      schoolFiltered.not(card.has("a:contains('" + lecturerFilter + "')")).addClass('is-hidden');
+      card.filter("[data-school='all']").removeClass('is-hidden');
+    }
+  });
+
 /*
   $("#filterIt").click(function(){
     var card = $(".card");
@@ -75,7 +87,9 @@
   });
 
   $(".filter--reset").click(function(){
-    $(this).closest("body").find(".filter").fadeOut();
+    if($(window).width <= 768) {
+      $(this).closest("body").find(".filter").fadeOut();
+    }
   });
 
 }));

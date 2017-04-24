@@ -25,54 +25,53 @@
   </header><!-- #header  -->
 
   <section class="filter is-hidden cf">
-    <div class="container">
-      <form id="filter--form">
-        <div class="filter--school">
-          <label for="school-filter">Школа</label>
-          <select name="school" id="school-filter">
-            <option value="" selected>Все</option>
-            <option value="mngmnt">Менеджмент</option>
-            <option value="frontend">Интерфейс</option>
-            <option value="design">Дизайн</option>
-            <option value="mobdev">Моб. разработка</option>
-          </select>
-        </div><!--  .filter--school -->
-        <div class="filter--lecturer">
-          <label for="lecturer-filter">Лектор</label>
-          <select name="lecturer" id="lecturer-filter">
-            <option value="" selected>Все</option>
-            <option value="Дмитрий Душкин">Дмитрий Душкин</option>
-            <option value="Антон Тен">Антон Тен</option>
-            <option value="Максим Васильев">Максим Васильев</option>
-            <option value="Сергей Бережной">Сергей Бережной</option>
-            <option value="Андрей Морозов">Андрей Морозов</option>
-            <option value="Иван Карев">Иван Карев</option>
-            <option value="Прокопюк Андрей">Прокопюк Андрей</option>
-          </select>
-        </div><!--  .filter--school -->
-        <div class="filter--lecturer">
-          <label for="month-month">Месяц</label>
-          <select name="month" id="month-filter">
-            <option value="" selected>Все</option>
-            <option value="Янв">Январь</option>
-            <option value="Фев">Февраль</option>
-            <option value="Март">Март</option>
-            <option value="Апр">Апрель</option>
-            <option value="Май">Май</option>
-            <option value="Июнь">Июнь</option>
-            <option value="Июль">Июль</option>
-            <option value="Авг">Август</option>
-            <option value="Сент">Сентябрь</option>
-            <option value="Окт">Октябрь</option>
-            <option value="Ноя">Ноябрь</option>
-            <option value="Дек">Декабрь</option>
-          </select>
-        </div><!--  .filter--school -->
-        <div class="filter--apply">
-          <button type="button" class="filter--button">Применить фильтры</button>
-          <button type="button" class="filter--reset">Сбросить фильтры</button>
-        </div><!--  .filter--apply -->
-      </form>
+    <div class="container cf">
+      <h3>Фильтры</h3>
+      <div class="filter--school">
+        <label for="school-filter">Школа</label>
+        <select name="school" id="school-filter">
+          <option value="all" selected>Все</option>
+          <option value="mngmnt">Менеджмент</option>
+          <option value="frontend">Интерфейс</option>
+          <option value="design">Дизайн</option>
+          <option value="mobdev">Моб. разработка</option>
+        </select>
+      </div><!--  .filter--school -->
+      <div class="filter--lecturer">
+        <label for="lecturer-filter">Лектор</label>
+        <select name="lecturer" id="lecturer-filter">
+          <option value="all" selected>Все</option>
+          <option value="Дмитрий Душкин">Дмитрий Душкин</option>
+          <option value="Антон Тен">Антон Тен</option>
+          <option value="Максим Васильев">Максим Васильев</option>
+          <option value="Сергей Бережной">Сергей Бережной</option>
+          <option value="Андрей Морозов">Андрей Морозов</option>
+          <option value="Иван Карев">Иван Карев</option>
+          <option value="Прокопюк Андрей">Прокопюк Андрей</option>
+        </select>
+      </div><!--  .filter--lecturer -->
+      <div class="filter--month">
+        <label for="month-filter">Месяц</label>
+        <select name="month" id="month-filter">
+          <option value="all" selected>Все</option>
+          <option value="Янв">Январь</option>
+          <option value="Фев">Февраль</option>
+          <option value="Март">Март</option>
+          <option value="Апр">Апрель</option>
+          <option value="Май">Май</option>
+          <option value="Июнь">Июнь</option>
+          <option value="Июль">Июль</option>
+          <option value="Авг">Август</option>
+          <option value="Сент">Сентябрь</option>
+          <option value="Окт">Октябрь</option>
+          <option value="Ноя">Ноябрь</option>
+          <option value="Дек">Декабрь</option>
+        </select>
+      </div><!--  .filter--month -->
+      <div class="filter--buttons">
+        <a href="#" title="Применить" class="filter--buttons--apply">Применить</a>
+        <a href="#" title="Сбросить" class="filter--buttons--reset">Сбросить</a>
+      </div><!--  .filter--apply -->
     </div><!--  .container -->
   </section><!--  .filters -->
 
@@ -303,7 +302,7 @@
             </div><!--  .card--details -->
           </li><!--  .card -->
 
-          <li class="card past cf" data-school="mobdev">
+          <li class="card cf" data-school="mobdev">
 
             <div class="card--title--box cf">
               <div class="card--date l-left">
@@ -347,51 +346,7 @@
             </div><!--  .card--details -->
           </li><!--  .card -->
 
-          <li class="card past cf" data-school="mobdev">
-
-            <div class="card--title--box cf">
-              <div class="card--date l-left">
-                <span class="card--date--day">25</span>
-                <span class="card--date--month">Ноя</span>
-              </div><!--  .card--date -->
-
-              <div class="card--title l-left cf">
-                <h2>MyFirstApp (Часть 1)</h2>
-                <a class="card--expander" href="#">Больше информации</a>
-              </div><!--  .card--title -->
-            </div><!--  .card--title--box -->
-
-            <div class="card--details is-hidden cf">
-              <div class="card--meta">
-                <ul>
-                  <li class="card--meta--time"><i class="fa fa-clock-o"></i> 19:00</li><!-- .card--meta-- -->
-                  <li class="card--meta--place"><i class="fa fa-map-marker"></i> "Синий кит"</li><!-- .card--meta-- -->
-                  <li class="card--meta--seats"><i class="fa fa-users"></i> Места: 80</li><!-- .card--meta-- -->
-                </ul>
-              </div><!--  .card--meta -->
-
-              <div class="card--tags tags">
-                <strong>Школы</strong>
-                <ul class="l-inline">
-                  <li class="tags--tag"><i class="fa fa-android"></i> Мобильная</li>
-                </ul>
-              </div><!--  .card--meta--tags tags -->
-
-              <div class="card--lecturers">
-                <strong>Лекторы</strong>
-                <ul class="l-inline">
-                  <li class="card--lecturers--lecturer">
-                    <a href="#rgrigorModal" rel="modal:open" class="open-modal">Роман Григорьев <i class="fa fa-info-circle"></i></a>
-                  </li>
-                </ul>
-              </div><!--  .card--lecturers -->
-
-              <a href="https://events.yandex.ru/lib/talks/4169/" class="card--link--button l-right">Смотреть</a>
-
-            </div><!--  .card--details -->
-          </li><!--  .card -->
-
-          <li class="card past cf" data-school="design">
+          <li class="card cf" data-school="design">
 
             <div class="card--title--box cf">
               <div class="card--date l-left">
